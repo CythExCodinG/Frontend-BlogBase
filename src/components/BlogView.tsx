@@ -1,4 +1,3 @@
-import React from 'react'
 import { Avatar } from './BlogsCard'
 import Navbar from './Navbar'
 
@@ -16,7 +15,7 @@ const BlogView = ({
   title
 }: BlogcardProps) => {
   return (<>
-    <Navbar />
+    <Navbar page='blog' />
     <div className='grid w-[90%] md:w-[75%] grid-cols-12  mx-auto px-4 mt-10'>
       <div className='col-span-8 p-2'>
         <div>

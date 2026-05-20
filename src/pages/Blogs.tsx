@@ -1,9 +1,6 @@
-import React from 'react'
-import BlogsCard, { Avatar } from '../components/BlogsCard'
+import BlogsCard from '../components/BlogsCard'
 import Navbar from '../components/Navbar'
 import useBlogs from '../Hooks'
-import { Link } from 'react-router-dom'
-import { Skeleton } from 'boneyard-js/react'
 
 const Blogs = () => {
   const { loading, blogs } = useBlogs();
@@ -87,8 +84,8 @@ const Blogs = () => {
 
     <div className='mt-2'>
       {blogs.map(blog => <BlogsCard
-        id={blog.id}
         title={blog.title}
+        id={blog.id}
         author={blog.author.email}
         content={blog.content}
         publishedDate='24th feb 2026'

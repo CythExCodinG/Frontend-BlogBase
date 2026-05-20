@@ -1,5 +1,5 @@
 import { CirclePlus } from 'lucide-react'
-import React from 'react'
+
 import { Navigate, useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 const Navbar = ({ page }: { page: string }) => {
