@@ -1,7 +1,9 @@
 import { CirclePlus } from 'lucide-react'
 import React from 'react'
+import { Navigate, useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 const Navbar = ({ page }: { page: string }) => {
+  const navigator = useNavigate();
   return (
     <nav className="w-full bg-[#0f172a] border-b border-slate-800 px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -26,11 +28,18 @@ const Navbar = ({ page }: { page: string }) => {
         </Link>
 
         {/*Left side nfor nav */}
-        {page === "editor" ? "" : (<div className='w-[15%] '>
+        {page === "editor" ? "" : (<div className='w-[25%] flex justify-evenly'>
           <Link to={"/edit"}>
             <button className='cursor-pointer inline-flex gap-1 bg-emerald-500 px-2 py-1 rounded-3xl font-light'>Add <CirclePlus strokeWidth={1} /></button>
 
           </Link>
+
+          <button onClick={() => {
+            localStorage.clear()
+            navigator('/signup')
+          }} className='cursor-pointer inline-flex gap-1 bg-red-500 px-2 py-1 rounded-3xl font-light'>Logout</button>
+
+
         </div>)}
 
       </div>
