@@ -4,7 +4,7 @@ import Signin from './pages/Signin'
 import Signup from './pages/Signup'
 import Blogs from './pages/Blogs'
 import '../src/bones/registry'
-
+import Editor from './pages/Editor'
 const App = () => {
   return (
     <BrowserRouter>
@@ -13,6 +13,7 @@ const App = () => {
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/signin' element={<Signin />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/edit' element={<Editor />} />
       </Routes>
     </BrowserRouter >
   )

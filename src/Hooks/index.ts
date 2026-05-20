@@ -45,10 +45,9 @@ const useBlogs = () => {
       }
     })
       .then(response => {
-        setTimeout(() => {
-          setBlogs(response.data.blog)
-          setLoading(false)
-        }, 3000)
+        setBlogs(response.data.blog)
+        setLoading(false)
+
       })
     console.log(setBlogs)
 
