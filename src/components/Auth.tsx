@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { SignupInput } from 'common-medium'
+import { useState } from 'react'
+import type { SignupInput } from 'common-medium'
 import axios from 'axios'
 import { BACKEND_URL } from '../config'
 import { useNavigate } from 'react-router-dom'

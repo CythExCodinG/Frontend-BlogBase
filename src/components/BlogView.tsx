@@ -20,7 +20,7 @@ const BlogView = ({
       <div className='col-span-8 p-2'>
         <div>
           <h1 className='text-3xl font-bold'>{title}</h1>
-          <h3 className='text-slate-700 text-sm'>Posted on : Date</h3>
+          <h3 className='text-slate-700 text-sm'>Posted on : {publishedDate}</h3>
         </div>
         <div>
           <p className='text-slate-800 tracking-tight'>{content}</p>

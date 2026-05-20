@@ -1,5 +1,3 @@
-import React from 'react'
-import Navbar from './Navbar'
 import { Link } from 'react-router-dom'
 
 interface BlogcardProps {
@@ -9,9 +7,7 @@ interface BlogcardProps {
   content: string,
   title: string
 }
-interface AvatarProps {
-  author: string
-}
+
 const BlogsCard = ({
   id,
   publishedDate,

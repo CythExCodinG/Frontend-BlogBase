@@ -1,16 +1,15 @@
-import React from 'react'
 import BlogView from '../components/BlogView'
 import { useBlog } from '../Hooks'
 import { useParams } from 'react-router-dom'
 
 
 const Blog = () => {
-  const param = useParams();
-  const id = param.id
-  const { loading, blog } = useBlog({ id: id });
-  if (loading) {
+  const { id } = useParams<{ id: string }>()
+
+  const { loading, blog } = useBlog({ id: id || "" });
+  if (loading || !blog) {
     return <div>
-      Loding.....
+      Loding..
     </div>
   }
   return (
