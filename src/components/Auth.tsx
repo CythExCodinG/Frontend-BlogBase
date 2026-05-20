@@ -42,7 +42,7 @@ const Auth = ({ type }: { type: "signup" | "signin" }) => {
 
       <div className='mt-2'>
         <label className='mt-4' htmlFor="email">Username</label>
-        <input className=' email ring-2 rounded-sm focus:outline-blue-600   w-full p-2' type="text" placeholder='Enter username' onChange={(e) => {
+        <input className=' email rounded-sm focus:border-blue-600   w-full p-2' type="text" placeholder='Enter username' onChange={(e) => {
           setPostInputs({
             ...postInputs,
             username: e.target.value
@@ -52,7 +52,7 @@ const Auth = ({ type }: { type: "signup" | "signin" }) => {
 
       <div className='mt-2'>
         <label htmlFor="email">Password</label>
-        <input className='email ring-2 rounded-sm focus:outline-blue-600   w-full p-2' type="password" placeholder='Enter password' onChange={(e) => {
+        <input className='email rounded-sm focus:border-blue-600 w-full p-2' type="password" placeholder='Enter password' onChange={(e) => {
           setPostInputs({
             ...postInputs,
             password: e.target.value

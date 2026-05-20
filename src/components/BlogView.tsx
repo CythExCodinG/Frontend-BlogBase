@@ -17,7 +17,7 @@ const BlogView = ({
 }: BlogcardProps) => {
   return (<>
     <Navbar />
-    <div className='grid grid-cols-12 px-4'>
+    <div className='grid w-[90%] md:w-[75%] grid-cols-12  mx-auto px-4 mt-10'>
       <div className='col-span-8 p-2'>
         <div>
           <h1 className='text-3xl font-bold'>{title}</h1>
@@ -27,7 +27,7 @@ const BlogView = ({
           <p className='text-slate-800 tracking-tight'>{content}</p>
         </div>
       </div>
-      <div className='col-span-4 p-4 flex flex-col  gap-2 items-start'>
+      <div className='col-span-4 p-4 flex flex-col gap-2 items-start'>
         <h6 className='justify-self-start font-bold'>Author</h6>
         <div className='flex gap-2 justify-center items-center'>
           <Avatar name='rohit' />
