@@ -53,7 +53,7 @@ const Blogs = () => {
 
           </div>
           <div className='text-2xs text-slate-700 bg-slate-200 w-fit m-1 px-2 my-2 rounded-4xl'>
-            <div className="h-2 bg-neutral-quaternary rounded-full max-w-[360px]"></div>
+            <div className="h-2 bg-neutral-quaternary rounded-full max-w-90"></div>
           </div>
 
         </div>
@@ -69,7 +69,7 @@ const Blogs = () => {
 
           </div>
           <div className='text-2xs text-slate-700 bg-slate-200 w-fit m-1 px-2 my-2 rounded-4xl'>
-            <div className="h-2 bg-neutral-quaternary rounded-full max-w-[360px]"></div>
+            <div className="h-2 bg-neutral-quaternary rounded-full max-w-90"></div>
           </div>
 
         </div>
