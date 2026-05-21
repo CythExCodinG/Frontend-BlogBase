@@ -17,7 +17,7 @@ const BlogsCard = ({
 }: BlogcardProps) => {
 
   return (<>
-    <Link to={`http://localhost:5173/blogs/${id}`}>
+    <Link to={`/blogs/${id}`}>
       <div className="px-3 mx-auto py-2 border-b-slate-600  border-b w-[75%]">
         <div className='w-full gap-2 flex justify-start items-center'>
           <Avatar name={author} /><p>{author}</p>•<p>{publishedDate}</p>
